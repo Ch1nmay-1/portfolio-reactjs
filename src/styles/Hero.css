@@ -1,0 +1,78 @@
+.hero {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #e6f7ff, #ffffff); /* soft blue to white gradient */
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #2E3A59; /* professional dark blue for text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  animation: fadeSlideIn 1.5s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Text Styling */
+.hero h2 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+  z-index: 1;
+  animation: popIn 1s ease forwards;
+  color: #2E3A59; /* dark blue */
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #4A90E2; /* soft blue for description text */
+  z-index: 1;
+  animation: fadeIn 2s ease forwards;
+}
+
+/* Animations */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+}

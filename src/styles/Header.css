@@ -1,0 +1,56 @@
+/* Header Styling */
+.header {
+    position: sticky;
+    top: 0;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.9); /* light transparent background */
+    backdrop-filter: blur(12px); /* soft glass effect */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* softer shadow */
+    z-index: 1000;
+  }
+  
+  /* Logo Styling */
+  .logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2E3A59; /* professional dark blue */
+    text-shadow: 0 0 6px rgba(72, 144, 226, 0.1);
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #2E3A59; /* darker blue-gray */
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #4A90E2; /* soft blue accent on hover */
+    transform: scale(1.05); /* subtle scale animation */
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      gap: 1.2rem;
+    }
+  
+    .logo {
+      font-size: 1.6rem;
+    }
+  
+    .nav-links a {
+      font-size: 1rem;
+    }
+  }
+  
